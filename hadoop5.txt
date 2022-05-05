@@ -1,0 +1,10 @@
+sbin mai jaake 1.start-dfs
+2. start- yarn kar
+
+cd.. karke hadoop folder mai jaa
+
+hadoop fs -mkdir /input
+hadoop fs -put "path/sample.txt" /input
+
+hadoop jar "path/mapreduce-examples.jar" wordcount /input /output
+
